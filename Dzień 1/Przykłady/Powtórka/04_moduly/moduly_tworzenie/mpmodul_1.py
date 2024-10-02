@@ -1,11 +1,5 @@
 """ Przykładowy moduł w jezyku Python test 1 """
-
-if __name__ == "__main__":
-    print("Wysołanie bezpośrednie(nie jako moduł)")
-    print(__name__)
-else:
-    print("Jestem modułem")
-    print(__name__)
+SAMOGLOWSKI = ('a', 'e')
 
 
 def pozdrowienia(imie):
@@ -23,3 +17,17 @@ def powitanie():
     przedstawiam_sie()
     imie = input("A jak ty masz na imię ? ")
     return imie
+
+
+"""
+if __name__ == "__main__":
+    print("Wywołanie  bezpośrednie(nie jako moduł)")
+    print(__name__)
+    # testowanie modułu
+    imie = powitanie()
+    pozdrowienia(imie)
+
+else:
+    print("Jestem modułem")
+    print(__name__)
+"""

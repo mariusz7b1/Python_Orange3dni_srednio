@@ -1,4 +1,8 @@
+"""Test modułow 1"""
 import mpmodul_1 as po
-pass
+
+
 imie_kursanta = po.powitanie()
 po.pozdrowienia(imie_kursanta)
+
+print(po.SAMOGLOWSKI)
