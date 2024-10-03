@@ -1,0 +1,5 @@
+Wymuszanie implementacji metod: Klasa abstrakcyjna służy do definiowania interfejsów, wymuszając na klasach dziedziczących zaimplementowanie pewnych metod.
+
+Nie można ich instancjonować: Nie można tworzyć bezpośrednich instancji klasy abstrakcyjnej. Dopiero klasy dziedziczące, które implementują wszystkie metody abstrakcyjne, mogą być instancjonowane.
+
+Klasy abstrakcyjne mogą mieć implementowane metody: Nie wszystkie metody muszą być abstrakcyjne. Klasa abstrakcyjna może zawierać metody z pełną implementacją, które klasy pochodne mogą dziedziczyć i używać bez modyfikacji
