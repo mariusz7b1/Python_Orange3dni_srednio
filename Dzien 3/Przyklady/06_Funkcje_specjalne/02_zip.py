@@ -1,3 +1,6 @@
+"""
+przyklad zip
+"""
 
 lista1 = ['jeden', 'dwa', 'trzy']
 lista2 = [1, 2, 3, 4, 5]

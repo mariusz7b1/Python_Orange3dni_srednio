@@ -27,7 +27,7 @@ def mnoznik(n):
 podwajacz = mnoznik(2)
 "podwajacz=lambda x: x * 2"
 potrajacz = mnoznik(3)
-"podwajacz=lambda x: x * 3"
+"potrajacz=lambda x: x * 3"
 
 print(type(podwajacz))
 print(type(potrajacz))
