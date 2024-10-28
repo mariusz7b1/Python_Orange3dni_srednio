@@ -8,9 +8,8 @@ lista_osob = []
 # wczytywanie danych
 zm_robocza = 1
 
-
+dct = {}
 while zm_robocza <= 5:
-    dct = {}
     print(id(dct))
     # odczytaj z pliku kolejną linie
     dct["imie"] = "Jan_" + str(zm_robocza)          # najcześciej dane z pliku
