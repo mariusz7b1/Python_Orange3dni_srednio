@@ -1,6 +1,12 @@
-def read_int(prompt="podaj liczbę całkowitą", min=0, max=100):
-    assert isinstance(min, int), "parametr min musi być liczbą całkowitą"
-    assert isinstance(max, int), "parametr max musi być liczbą całkowitą"
+""""
+Funckcja read_int
+"""
+
+
+def read_int(prompt="podaj liczbę całkowitą", minimum=0, maksimum=100):
+    assert isinstance(minimum, int), "parametr min musi być liczbą całkowitą"
+    assert isinstance(maksimum, int), "parametr max musi być liczbą całkowitą"
+    prompt = f"{prompt} (od {minimum} do {maksimum}):  "
     while True:
         try:
             wartosc = int(input(prompt + " "))
@@ -9,8 +15,9 @@ def read_int(prompt="podaj liczbę całkowitą", min=0, max=100):
         except KeyboardInterrupt:
             print(" Nic z tego  :)")
         else:
-            if wartosc < min or wartosc > max:
-                print(f"zły zakres !!! Podaj liczbę od {min} do {max}")
+            if wartosc < minimum or wartosc > maksimum:
+                print(f"zły zakres !!! Podaj liczbę od {
+                      minimum} do {maksimum}")
             else:
                 break
     return wartosc
@@ -18,7 +25,8 @@ def read_int(prompt="podaj liczbę całkowitą", min=0, max=100):
 
 def main():
     print(read_int("Podaj liczbę całkowitą", 1, 5))
-    print(read_int("Podaj liczbę całkowitą", "", 5))
+    print(read_int("Podaj wiek ", 18, 110))
+    print(read_int("Podaj ilosć prób", 100, 200))
 
 
 if __name__ == "__main__":
