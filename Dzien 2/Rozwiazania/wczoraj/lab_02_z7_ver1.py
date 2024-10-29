@@ -37,8 +37,8 @@ def test_random_generator(n, od, do) -> None:
     print("wyniki zamieszczono w poniższej tabeli")
     wynik_proc = {i: wynik[i]/n*100 for i in range(od, do+1)}
 
-    for klucz in wynik_proc.keys():
-        print(f"{klucz:4} wystapiło {wynik_proc[klucz]:>6.2f} % ")
+    for klucz, wartosc in wynik_proc.items():
+        print(f"{klucz:4} wystapiło {wartosc:>6.2f} % ")
 
 
 def main() -> None:
