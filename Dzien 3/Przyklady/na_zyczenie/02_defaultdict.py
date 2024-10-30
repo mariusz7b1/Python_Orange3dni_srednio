@@ -13,7 +13,9 @@ zdania = [
 ]
 
 # Tworzymy defaultdict, gdzie każde nowe słowo ma domyślną wartość 0
-licznik_slow = defaultdict(lambda: 0)
+# licznik_slow = defaultdict(lambda: 0)
+# fnkcja int bez parametrów zwraca wartośc 0 :)
+licznik_slow = defaultdict(int)
 
 # Dla każdego zdania z listy
 for zdanie in zdania:
