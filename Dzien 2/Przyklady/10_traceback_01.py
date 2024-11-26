@@ -36,7 +36,7 @@ except ZeroDivisionError:
     exc_type, exc_value, exc_traceback = exc_info()
     print(f"Typ wyjątku: {exc_type}")
     print(f"Wartość wyjątku: {exc_value}")
-    exc_type, exc_value, exc_traceback = sys.exc_info()
+    exc_type, exc_value, exc_traceback = exc_info()
     print(f"Typ wyjątku: {exc_type}")
     print(f"Wartość wyjątku: {exc_value}")
     print("Traceback:")
