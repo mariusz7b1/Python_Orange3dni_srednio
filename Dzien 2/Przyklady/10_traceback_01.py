@@ -20,6 +20,7 @@ except Exception as e:
     print(f"Traceback zapisany w zmiennej:\n{blad}")
 
 # Przykład z użyciem extract_tb:
+# python 3.11 i nowszy
 try:
     wynik = 10 / 0
 except Exception as e:
@@ -35,3 +36,8 @@ except ZeroDivisionError:
     exc_type, exc_value, exc_traceback = exc_info()
     print(f"Typ wyjątku: {exc_type}")
     print(f"Wartość wyjątku: {exc_value}")
+    exc_type, exc_value, exc_traceback = sys.exc_info()
+    print(f"Typ wyjątku: {exc_type}")
+    print(f"Wartość wyjątku: {exc_value}")
+    print("Traceback:")
+    traceback.print_tb(exc_traceback)
