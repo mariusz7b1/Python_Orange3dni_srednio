@@ -3,6 +3,14 @@ Fun jako argument
 """
 
 
+def dodaj(a, b):
+    return a + b
+
+
+def odejmij(a, b):
+    return a - b
+
+
 def mnoz(a, b):
     return a * b
 
@@ -11,24 +19,15 @@ def dziel(a, b):
     return a / b
 
 
-def wykonaj_operacje(operacja, a, b):
-    return operacja(a, b)
+def wykonaj_operacje(dzialanie, a, b):
+    return dzialanie(a, b)
 
 
 # Przypisanie funkcji do zmiennej
-moja_funkcja = mnoz
+moja_funkcja = [("dodawanie", dodaj), ("odejmowanie", odejmij),
+                ("mnożenie", mnoz), ("dzielenie", dziel)]
 
 # Przekazanie funkcji jako argumentu do innej funkcji
-wynik1 = wykonaj_operacje(moja_funkcja, 5, 3)
-print(f"Wynik mnożenia: {wynik1}")
-
-# Zmiana przypisanej funkcji
-moja_funkcja = dziel
-
-# Ponownie przekazanie funkcji jako argumentu do innej funkcji
-wynik2 = wykonaj_operacje(moja_funkcja, 10, 2)
-print(f"Wynik dzielenia: {wynik2}")
-
-
-for moja_funkcja in [mnoz, dziel]:
-    print(wykonaj_operacje(moja_funkcja, 45, 15))
+for operacja, fun in moja_funkcja:
+    wynik1 = wykonaj_operacje(fun, 15, 3)
+    print(f"Wynik opercaji {operacja}: {wynik1}")
