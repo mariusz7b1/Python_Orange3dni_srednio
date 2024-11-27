@@ -6,5 +6,3 @@ system('cls')
 
 imie_kursanta = po.powitanie()
 po.pozdrowienia(imie_kursanta)
-
-print(po.SAMOGLOWSKI)

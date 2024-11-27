@@ -1,5 +1,4 @@
 """ Przykładowy moduł w jezyku Python test 1 """
-SAMOGLOWSKI = ('a', 'e')
 
 
 def pozdrowienia(imie):
